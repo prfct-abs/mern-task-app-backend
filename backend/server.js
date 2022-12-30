@@ -26,7 +26,11 @@ app.use(express.json()); //used to send data as json
 app.use(express.urlencoded({ extended: false })); //used to send data as form url encoded
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://mern-task-app.onrender.com"],
+    origin: [
+      "http://localhost:3000",
+      "https://mern-task-app.onrender.com",
+      "https://mern-task-app-179f.onrender.com",
+    ],
   })
 );
 
